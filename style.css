@@ -1,6 +1,5 @@
 body {
-    background-image: url("back.png");
-    background-color: #FAEDFF;
+    background-color: #A0434B;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center bottom;
@@ -12,22 +11,22 @@ table {
 }
 
 td {
-    border: 1px solid #f0f0f0;
-    background-color: #EFE6E5;
+    border: 1px solid white;
+    background-color: #FCF4F7;
     border-radius: 8px;
     padding: 5px 10px;
     font-size: 20px;
 }
 
 tr:nth-child(odd)>td {
-    background-color: #9A2C44;
-    color: white;
+    background-color: #A0434B;
+    color: #FCF4F7;
 }
 
 th {
     font-family: 'Rochester', cursive;
     font-size: 28px;
-    color: #9A2C44;
+    color: #FCF4F7;
 }
 
 button {
@@ -35,9 +34,9 @@ button {
     height: 50px;
     padding: 10px;
     text-align: center;
-    background-color: #EFE6E5;
-    border: 1px solid #EFE6E5;
-    color: #9A2C44;
+    background-color: #FCF4F7;
+    border: 1px solid #FCF4F7;
+    color: #A0434B;
     font-family: 'Rochester', cursive;
     font-size: 28px;
     border-radius: 8px;
@@ -47,12 +46,8 @@ button {
 }
 
 button:hover {
-    background-color: #9A2C44;
-    color: #EFE6E5;
-}
-
-.opacity {
-    opacity: 0.9;
+    background-color: #A0434B;
+    color: #FCF4F7;
 }
 
 h1 {
@@ -66,4 +61,8 @@ h1 {
 div {
     text-align: center;
     margin: 30px;
+}
+
+.header {
+    text-align: center;
 }

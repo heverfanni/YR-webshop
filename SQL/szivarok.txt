@@ -1,6 +1,0 @@
-INSERT INTO cigars (id, name, length, country, price)
-VALUES (1, 'The Edge Habano Torpedo', '8', 'Kuba', 1999),
- (2, 'Padron 1964 Anniversary Series A', 10, 'Kuba', 9499),
-(3, 'Árpád lelke', 9, 'Magyarország', 895),
-(4, 'Kiss of an English bride', 5, 'Anglia', 2947),
-(5, 'Santa Christina Campo Grande Orvieto Classico Cigaro', 18, 'Olaszország', 2349)
