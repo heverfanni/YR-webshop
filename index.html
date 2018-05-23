@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Józsefvárosi borshop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Józsefvárosi borshop</h1>
+    <div>
+        <button id="elso" onclick="loadWines()">Borok</button>
+        <button id="masodik" onclick="loadCheeses()">Sajtok</button>
+        <button id="harmadik" onclick="loadCigars()">Szivarok</button>
+        <button id="negyedik" onclick="loadUsers()">Felhasználók</button>
+        <button id="otodik" onclick="loadOrders()">Rendelések</button>
+        <br>
+        <button id="elso" onclick="benji()">Benji</button>
+        <button id="masodik" onclick="dennis()">Dennis</button>
+        <button id="harmadik" onclick="fanni()">Fanni</button>
+        <button id="negedik" onclick="gyongyi()">Gyöngyi</button>
+        <button id="otodik" onclick="kozos()">Közös</button>
+    </div>
+
+    <div class="opacity">
+        <table id="dataTable"></table>
+    </div>
+
+    <div id="content">
+    </div>
+
+
+    <script src="client.js"></script>
+</body>
+
+</html>

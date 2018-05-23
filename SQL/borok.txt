@@ -1,0 +1,13 @@
+INSERT INTO wines (id, name, color, taste, country, price, type, wineyear)
+VALUES (1, 'SKIZO', 'fehér', 'száraz', 'Magyarország', 3999, 'Olaszrizling', 2009),
+ (2, 'Varga', 'rozé', 'száraz', 'Magyarország', 1899, 'Hárslevelű', 2015),
+(3, 'Göncöl', 'fehér', 'félszáraz', 'Magyarország', 2050, 'Szamorodni', 2011),
+(4, 'Chateauchebal Blanc', 'fehér', 'édes', 'Franciaország', 5636589, 'Savignon Blanc', 1947),
+(5, 'Santa Christina Campo Grande Orvieto Classic', 'vörös', 'édes', 'Olaszország', 2350, 'Merlot', 2016),
+(6, 'Tenuta di Biserino', 'vörös', 'félédes', 'Portugália', 39868, 'Estate Malbec', 2000),
+(7, 'Egon Müller', 'fehér', 'édes', 'Németország', 4370000, 'Királyleányka', 2003),
+(8, 'Chateau  La Fite', 'rozé', 'félszáraz', 'Franciaország', 6328000, 'Rotschield', 1869),
+(9, 'Meandro do Bale Meao', 'vörös', 'száraz', 'Portugália', 6500, 'Estate Malbec', 2009),
+(10, 'Martinus', 'vörös', 'édes', 'Magyarország', 65325, 'Kékfrankos rozé', 2013),
+(11, 'Csaplárosné', 'vörös', 'száraz', 'Magyarország', 150, 'Tablettás', 2016),
+(12, 'Descendientes de J. Pacios', 'vörös', 'félszáraz', 'Spanyolország', 89000, 'La Faraona', 2006)

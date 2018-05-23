@@ -1,0 +1,5 @@
+Csapattagok:
+ - Barócsi Benjámin
+ - Hevér Fanni
+ - Sándor Gyöngyi
+ - Tóbi Dennis

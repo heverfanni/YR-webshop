@@ -1,0 +1,60 @@
+CREATE TABLE Users(
+    id bigint PRIMARY KEY AUTO_INCREMENT,
+    email varchar(100) not null,
+    pw varchar(50) not null,
+    name varchar(100) not null,
+    dob date not null,
+    postal_code varchar(5),
+    city varchar(200) not null,
+    address varchar(255) not null
+)ENGINE INNODB CHARACTER SET utf8 COLLATE utf8_hungarian_ci;
+
+CREATE TABLE Wines(
+    id bigint PRIMARY KEY AUTO_INCREMENT,
+    name varchar(100) not null,
+    color varchar(50) not null,
+    taste varchar(50) not null,
+    country varchar(100) not null,
+    price mediumint not null,
+    type varchar(50) not null,
+    wineyear SMALLINT not null
+)ENGINE INNODB CHARACTER SET utf8 COLLATE utf8_hungarian_ci;
+
+CREATE TABLE Cheeses(
+	id bigint PRIMARY KEY AUTO_INCREMENT,
+	name varchar(100) not null,
+	hardness varchar(50) not null,
+	fat float not null,
+	price mediumint not null,
+	smoked tinyint not null
+) ENGINE INNODB CHARACTER SET utf8 COLLATE utf8_hungarian_ci;
+
+
+CREATE TABLE Cigars(
+	id bigint PRIMARY KEY AUTO_INCREMENT,
+	name varchar(100) not null,
+	length tinyint not null,
+	country varchar(100) not null,
+	price mediumint not null
+) ENGINE INNODB CHARACTER SET utf8 COLLATE utf8_hungarian_ci;
+
+CREATE TABLE Orders(
+    id bigint PRIMARY KEY AUTO_INCREMENT,
+    orderdate date not null,
+    userid bigint,
+    wineid bigint,
+	cheeseid bigint,
+	cigarid bigint,
+    CONSTRAINT fk_orders_users
+    FOREIGN KEY (userid)
+    REFERENCES Users(id),
+    CONSTRAINT fk_orders_wines
+    FOREIGN KEY (wineid)
+    REFERENCES Wines(id),
+	CONSTRAINT fk_orders_cheeses
+    FOREIGN KEY (cheeseid)
+    REFERENCES Cheeses(id),
+	CONSTRAINT fk_orders_cigars
+    FOREIGN KEY (cigarid)
+    REFERENCES Cigars(id)
+)ENGINE INNODB CHARACTER SET utf8 COLLATE utf8_hungarian_ci;

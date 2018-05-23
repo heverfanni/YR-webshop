@@ -1,0 +1,5 @@
+﻿INSERT INTO `cheeses`(`id`, `name`, `hardness`, `fat`, `price`, `smoked`) VALUES (1,'parmezán','kemény',32,6000,0),
+(2,'feta','lágy',21.3,2360,0),
+(3,'maci','lágy',22.8,2500,0),
+(4,'ricotta','kemény',13,1250,0),
+(5,'karaván','félkemény',23,2000,1)
