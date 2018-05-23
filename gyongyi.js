@@ -1,5 +1,5 @@
 function sajtossz() {
-    var sqlText = "SELECT SUM(cheeses.price*cheeses.db) FROM cheeses";
+    var sqlText = "SELECT format(SUM(cheeses.price*cheeses.db), 0) AS 'Sajtok ára összesen' FROM cheeses";
     sql(sqlText, function (data) {
         displayData(data, dataTable)
     });
@@ -7,14 +7,14 @@ function sajtossz() {
 }
 
 function szivarossz() {
-    var sqlText = "SELECT SUM(cigars.price*cigars.db) FROM cigars";
+    var sqlText = "SELECT format(SUM(cigars.price*cigars.db), 0) AS 'Szivarok ára összesen' FROM cigars";
     sql(sqlText, function (data) {
         displayData(data, dataTable)
     });
 }
 
 function borossz() {
-    var sqlText = "SELECT SUM(wines.price*wines.db) FROM wines";
+    var sqlText = "SELECT format(SUM(wines.price*wines.db) ,0) AS 'Borok ára összesen' FROM wines";
     sql(sqlText, function (data) {
         displayData(data, dataTable)
     });
